@@ -1,0 +1,143 @@
+package informações;
+
+public class Profissão {
+	private String nome;
+	private String área;
+	private String estudo;
+	private int salarioI;
+	private int salarioM;
+	
+	//construtor
+	public Profissão(String nome, String área) {
+		this.área=área;
+		this.nome=nome;
+	    }
+	
+	//metodos de acesso tipo setter
+	
+		public void setEstudo(String estudo) {
+			this.estudo = estudo;
+			
+		}
+		
+		public void setSalarioI(int salarioI) {
+			this.salarioI = salarioI;
+		}
+		
+		public void setSalarioM(int salarioM) {
+			this.salarioM = salarioM;
+		
+		}
+		
+	//metodo de acesso tipo getter
+		
+		public String getNome() {
+			return nome;
+		}
+		
+		public String getÁrea() {
+			return área;
+		}
+		
+		public String getEstudo() {
+			return estudo;
+		}
+
+		public int getSalarioI() {
+			return salarioI;
+		}
+		
+		public int getSalarioM() {
+			return salarioM;
+		}
+	//contribuição
+
+		public void contribuição1(){
+		    System.out.println("essa profissão contribui na área da saúde");
+		}
+
+		public void contribuição2(){
+		    System.out.println("essa profissão contribui no reparo de objetos");
+		}
+
+		public void contribuição3(){
+		    System.out.println("essa profissão contribui no auxílio populacional");
+		}
+
+}
+
+
+package informações;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  Profissão md=new Profissão("médico","cardiologista");
+	       md.setSalarioI(8400);	
+	       md.setEstudo("nove anos");
+	       md.setSalarioM(20000);
+	       System.out.println("o profissional: "+md.getNome());
+	       System.out.println("especialista em: "+md.getÁrea());
+	       System.out.println("estudou por no mínimo: "+md.getEstudo());
+	       System.out.println("possui salário inicial de: "+md.getSalarioI());				
+	       System.out.println("possui salário máximo de: "+md.getSalarioM());
+	       md.contribuição1();
+	       System.out.println("---------");
+	       
+	       Profissão mc=new Profissão("mecânico","automobilístico");
+	       mc.setSalarioI(2000);	
+	       mc.setEstudo("cinco anos");
+	       mc.setSalarioM(3000);
+	       System.out.println("o profissional: "+mc.getNome());
+	       System.out.println("especialista em: "+mc.getÁrea());
+	       System.out.println("estudou por no mínimo: "+mc.getEstudo());
+	       System.out.println("possui salário inicial de: "+mc.getSalarioI());				
+	       System.out.println("possui salário máximo de: "+mc.getSalarioM());
+	       mc.contribuição2();
+	       System.out.println("---------");
+	       
+	       Profissão pl=new Profissão("policial","militar");
+	       pl.setEstudo("um ano");	
+	       pl.setSalarioI(3000);
+	       pl.setSalarioM(6500);
+	       System.out.println("o profissional: "+ pl.getNome());
+	       System.out.println("especificamente: "+pl.getÁrea());
+	       System.out.println("estudou por no mínimo: "+pl.getEstudo());
+	       System.out.println("possui salário inicial de: "+pl.getSalarioI());			
+	       System.out.println("possui salário máximo de: "+pl.getSalarioM());
+	       mc.contribuição3();
+	       System.out.println("---------");
+	       
+	       Profissão mv=new Profissão("médico","animais");
+	       mv.setSalarioI(1600);	
+	       mv.setEstudo("cinco anos");
+	       mv.setSalarioM(4500);
+	       System.out.println("o profissional: "+mv.getNome());
+	       System.out.println("especialista em: "+mv.getÁrea());
+	       System.out.println("estudou por no mínimo: "+mv.getEstudo());
+	       System.out.println("possui salário inicial de: "+mv.getSalarioI());				
+	       System.out.println("possui salário máximo de: "+mv.getSalarioM());
+	       mv.contribuição1();
+	       System.out.println("---------");
+	       
+	       Profissão pf=new Profissão("professor","ensino primário");
+	       pf.setSalarioI(1600);	
+	       pf.setEstudo("quatro");
+	       pf.setSalarioM(3800);
+	       System.out.println("o profissional: "+pf.getNome());
+	       System.out.println("especialista em: "+pf.getÁrea());
+	       System.out.println("estudou por no mínimo: "+pf.getEstudo());
+	       System.out.println("possui salário inicial de: "+pf.getSalarioI());				
+	       System.out.println("possui salário máximo de: "+pf.getSalarioM());
+	       mc.contribuição3();
+	       System.out.println("---------");
+	       
+	       
+	}	       
+	       
+}	       
+	
+	
+
+
